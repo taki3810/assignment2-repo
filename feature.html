@@ -1,0 +1,297 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Choose TechWave</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#12061f;
+      color:#fff;
+    }
+
+    .techwave{
+      max-width:1140px;
+      margin:60px auto;
+      display:grid;
+      gap:30px;
+      grid-template-areas:
+        "title title title title"
+        "audio mobile mobile mobile"
+        "audio global global global"
+        "interview interview interview resources";
+    }
+
+    /* ALL BOXES */
+    .techwave > div{
+      background:#2a0f4f;
+      padding:30px;
+      border-radius:12px;
+    }
+
+    /* TITLE (NO BOX) */
+    .title{
+      grid-area:title;
+      background:transparent;
+      padding:0;
+      border-radius:0;
+      text-align:center;
+    }
+
+    .title h3{
+      font-size:30px;
+      color:#ffd84d;
+      margin-bottom:10px;
+    }
+
+    /* GRID AREAS */
+    #audio{grid-area:audio;}
+    #mobile{grid-area:mobile;}
+    #global{grid-area:global;}
+    #interview{grid-area:interview;}
+    #resources{grid-area:resources;}
+
+    p{
+      color:#ddd;
+      line-height:1.6;
+    }
+
+    /* MOBILE */
+    @media(max-width:576px){
+      .techwave{
+        grid-template-areas:
+          "title"
+          "audio"
+          "mobile"
+          "global"
+          "interview"
+          "resources";
+      }
+    }
+
+    /* TABLET */
+    @media(min-width:577px) and (max-width:992px){
+      .techwave{
+        grid-template-areas:
+          "title title"
+          "audio mobile"
+          "global global"
+          "interview resources";
+      }
+    }
+  </style>
+</head>
+
+<body>
+   <div class="title">
+    <h3>Why Choose TechWave</h3>
+  </div>
+
+<section class="techwave">
+
+ 
+
+  <div id="audio">
+    <h3>Premium Audio Quality</h3>
+    <p>Crystal-clear sound with professional-grade recording and expert audio engineering.</p>
+  </div>
+
+  <div id="mobile">
+    <h3>Mobile Friendly</h3>
+    <p>Seamless mobile experience with offline downloads.</p>
+  </div>
+
+  <div id="global">
+    <h3>Global Community</h3>
+    <p>Connect with tech enthusiasts from over 120 countries worldwide.</p>
+  </div>
+
+  <div id="interview">
+    <h3>Exclusive Interviews</h3>
+    <p>In-depth conversations with founders, innovators, and industry leaders.</p>
+  </div>
+
+  <div id="resources">
+    <h3>Rich Resources</h3>
+    <p>Show notes, transcripts, and learning materials for every episode.</p>
+  </div>
+
+</section>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Why Choose TechWave</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      
+    }
+
+    body {
+      background: #14001f;
+      color: white;
+    }
+    .container{
+  max-width: 1200px;
+  margin: 0 auto;
+  max-height: 785px;
+}
+
+
+    .container > div {
+      background: #2b0050;
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    /* Grid Areas */
+    .title {
+      grid-area: title;
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .audio {
+      grid-area: audio;
+    }
+
+    .mobile {
+      grid-area: mobile;
+    }
+
+    .global {
+      grid-area: global;
+    }
+
+    .interview {
+      grid-area: interview;
+    }
+
+    .resources {
+      grid-area: resources;
+    }
+
+    .container {
+      display: grid;
+      gap: 30px;
+      padding: 60px;
+      grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3,1fr);
+
+      grid-template-areas:
+       
+        "audio mobile mobile "
+        "audio global global "
+        "interview interview  resources";
+    }
+
+    h3 {
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: #d3c3e5;
+      line-height: 1.6;
+    }
+.container > div img{
+  margin-bottom: 10px;
+}
+
+    /* Mobile */
+    @media screen and (max-width: 576px) {
+      .container {
+        grid-template-areas:
+          "title"
+          "audio"
+          "mobile"
+          "global"
+          "interview"
+          "resources";
+      }
+    }
+
+    /* Tablet */
+    @media screen and (min-width: 577px) and (max-width: 992px) {
+      .container {
+        grid-template-areas:
+          "title title title"
+          "audio audio mobile"
+          "global global mobile"
+          "interview interview resources";
+      }
+    }
+  </style>
+</head>
+
+<body>
+ <div class="title">Why Choose TechWave</div>
+  <section class="container">
+   
+
+    <div class="audio">
+       <img src="assets/headphone.png" alt="">
+      <h3>
+        Premium Audio Quality
+      </h3>
+      <p>
+        Experience crystal-clear sound with professional-grade recording
+        equipment and expert audio engineering. Every episode is mastered
+        for optimal listening across all devices.
+      </p>
+    </div>
+
+    <div class="mobile">
+      <img src="assets/device.png" alt="">
+      <h3> Mobile Friendly</h3>
+      <p>
+        Listen on the go with seamless mobile experience and offline downloads.
+      </p>
+    </div>
+
+    <div class="global">
+      <img src="assets/location.png" alt="">
+      <h3>Global Community</h3>
+      <p>
+        Connect with tech enthusiasts from over 120 countries worldwide.
+      </p>
+    </div>
+
+    <div class="interview">
+      <img src="assets/location.png" alt="">
+      <h3> Exclusive Interviews</h3>
+      <p>
+        Get unprecedented access to industry leaders, startup founders,
+        and tech visionaries. Learn directly from their journeys and success strategies.
+      </p>
+    </div>
+
+    <div class="resources">
+      <img src="assets/resource.png" alt="">
+      <h3> Rich Resources</h3>
+      <p>
+        Access show notes, transcripts, and additional learning materials
+        for every episode.
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>
