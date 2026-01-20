@@ -613,3 +613,150 @@ footer span{
     gap:15px;
   }
 }
+/* ---------------- SMALL DEVICES (MAX-WIDTH: 576PX) ---------------- */
+@media (max-width: 576px) {
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  /* Hero Section */
+  .hero {
+    min-height: auto;
+    padding: 40px 20px;
+    background-position: center;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .mic-circle {
+    width: 160px;
+    height: 160px;
+    font-size: 70px;
+  }
+
+  .badge {
+    top: 10px;
+    right: -5px;
+    padding: 4px 10px;
+    font-size: 10px;
+  }
+
+  /* About Section */
+  .about {
+    padding: 40px 20px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Features / Container */
+  .container {
+    display: grid;
+    grid-template-areas:
+      "title"
+      "audio"
+      "mobile"
+      "global"
+      "interview"
+      "resources";
+    padding: 30px 15px;
+    gap: 20px;
+  }
+
+  /* Episodes */
+  .episodes {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card-img img {
+    height: 180px;
+  }
+
+  .card-content h3 {
+    font-size: 16px;
+  }
+
+  .card-content p {
+    font-size: 13px;
+  }
+
+  .time {
+    font-size: 12px;
+  }
+
+  /* Meet the Host */
+  .host {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .host img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .host h3 {
+    font-size: 18px;
+  }
+
+  .host p {
+    font-size: 14px;
+  }
+
+  /* Footer */
+  .footer-content {
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .platforms {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .platforms a img {
+    width: 20px;
+    height: 20px;
+  }
+}
